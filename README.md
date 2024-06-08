@@ -19,10 +19,14 @@ Run the script with the following command:
 python vanity_sol.py -v [vanity_text] -m [max_matches] -e -i
 ```
 ### Options
--v, --vanity-text: Text to search for in the wallet address (required).
--m, --max-matches: Maximum number of matches to find before exiting (default: 1, not required).
--e, --match-end: Search for text at the end of the address instead of the beginning. (not required)
--i, --ignore-case: Ignore case when matching text. (not required)
+`-v`, `--vanity-text`: Text to search for in the wallet address (required).
+
+`-m`, `--max-matches`: Maximum number of matches to find before exiting (default: 1, not required).
+
+`-e`, `--match-end`: Search for text at the end of the address instead of the beginning. (not required)
+
+`-i`, `--ignore-case`: Ignore case when matching text. (not required)
+
 
 #### Example
 ```bash
