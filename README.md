@@ -16,7 +16,7 @@ Vanity Solana Address Generator is a python utility for generating Solana wallet
 Run the script with the following command:
 
 ```bash
-python vanity_sol.py -v [vanity_text] -m [max_matches] -e -i
+python vanity.py -v [vanity_text] -m [max_matches] -e -i
 ```
 ### Options
 `-v`, `--vanity-text`: Text to search for in the wallet address (required).
