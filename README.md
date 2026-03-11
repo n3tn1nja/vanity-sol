@@ -1,9 +1,9 @@
 # vanity-sol
-Vanity Solana Address Generator is a python utility for generating Solana wallet addresses that contain specific text patterns either at the beginning or the end of the address.
+Vanity-Sol is a utility script for generating Solana wallet addresses that contain specific text patterns either at the beginning or the end of the address.
 
 ## Features
-
 - Generate Solana addresses that start or end with specified text.
+- Save keypairs to JSON file.
 
 ## Requirements
 
