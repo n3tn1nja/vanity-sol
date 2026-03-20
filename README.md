@@ -63,7 +63,7 @@ Solana addresses are base58 encoded. Base58 deliberately excludes characters tha
 | `I` (capital i) | looks like `l` |
 | `l` (lowercase L) | looks like `I` |
 
-**Valid characters**: `1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P Q R S T U V W X Y Z a b c d e f g h i j k m n o p q r s t u v w x y z`
+**Valid characters**: `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz`
 
 All scripts validate input against this set before searching. The GUI shows an inline error message if you enter an invalid character.
 
