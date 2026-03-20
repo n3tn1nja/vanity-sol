@@ -84,7 +84,7 @@ python vanity.py -v <text> [options]
 | `--vanity-text` | `-v` | required | Text to search for in the address |
 | `--max-matches` | `-m` | `1` | Number of matching addresses to find before stopping |
 | `--match-end` | `-e` | off | Match the text at the **end** of the address instead of the start |
-| `--ignore-case` | `-i` | off | Case-insensitive - `Sol` matches `sol`, `SOL`, `SoL` |
+| `--ignore-case` | `-i` | off | Case-insensitive - `Sbh` matches `sbh`, `SBH`, `SbH` |
 | `--num-processes` | `-n` | CPU count | Number of parallel worker processes |
 
 ### How it works
@@ -101,8 +101,8 @@ python vanity.py -v <text> [options]
 # find one address starting with "abc" (uses all CPU cores by default)
 python vanity.py -v abc
 
-# find 3 addresses ending with "sol", case-insensitive, using 8 processes
-python vanity.py -v sol -m 3 -e -i -n 8
+# find 3 addresses ending with "sbh", case-insensitive, using 8 processes
+python vanity.py -v sbh -m 3 -e -i -n 8
 
 # find one address starting with "pump" using exactly 4 processes
 python vanity.py -v pump -n 4
@@ -139,7 +139,7 @@ python vanity.py
 
 ```
 +------------------------------------------------------------------+
-| VANITY SOL  v4              ~50,000 searched | 12,500 addr/s     |
+| VANITY SOL               ~50,000 searched | 12,500 addr/s     |
 +------------------------------------------------------------------+
 | PATTERNS       | SEARCH          | OUTPUT        | DISPLAY        |
 |                |                 |               |                |
@@ -256,7 +256,7 @@ This is statistically easier to find than a prefix match of the same length beca
 Each pattern has its own independent case sensitivity setting. Tick this before clicking "Add Pattern" to make that specific pattern case-insensitive.
 
 - Case-insensitive patterns are labelled `[i]` in the list (e.g. `^abc [i]`)
-- Case-sensitive patterns are labelled `[cs]` (e.g. `^Sol [cs]`)
+- Case-sensitive patterns are labelled `[cs]` (e.g. `^Sbh [cs]`)
 - You can mix - one pattern case-insensitive and another case-sensitive in the same run
 
 **Equivalent CLI flag:** `-i` (applies globally to the whole run in the CLI - per-pattern control is GUI-only)
@@ -554,8 +554,8 @@ python vanity.py -v xyz -e -n 4
 ### Multiple matches per pattern
 
 ```bash
-# GUI: Starts with = "sol", max matches = 5, ignore case, 8 processes
-python vanity.py -v sol -m 5 -i -n 8
+# GUI: Starts with = "sbh", max matches = 5, ignore case, 8 processes
+python vanity.py -v sbh -m 5 -i -n 8
 ```
 
 ### Ignore case
