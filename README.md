@@ -717,7 +717,7 @@ print(f'{10000/elapsed:,.0f} keys/sec  =  {10000/elapsed*60:,.0f} keys/min')
 
 ### Original author
 
-[@n3tn1nja](https://github.com/n3tn1nja) created the original Vanity SOL project. The core keypair generation loop, base58 validation logic, and the foundation that everything else is built on all come from his work. None of this exists without the original.
+[@n3tn1nja](https://github.com/n3tn1nja) created the original Vanity SOL project. The core keypair generation loop, and the foundation that everything else is built on all come from his work. None of this exists without the original.
 
 ### Major contributor
 
